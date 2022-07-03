@@ -23,14 +23,16 @@
 			f_d2 = (c2 / 10 + '0');
 			l_d2 = (c2 % 10 + '0');
 			if (c < c2)
-			{	putchar(f_d);
+			{
+				putchar(f_d);
 				putchar(l_d);
 				putchar(' ');
-
 				putchar(f_d2);
-				putchar(l_d2);																																										if (c != 98)																					{	putchar(',');
-						putchar(' ');
-					}																																									}
+				putchar(l_d2);
+				if (c != 98)
+				{	putchar(',');
+					    putchar(' ');
+				}																																									}
 																								c2++;																					}
 	c++;
 	}
