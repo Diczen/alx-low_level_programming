@@ -25,7 +25,7 @@
 			{
 				k = j * i;
 				_putchar(k + '0');
-				if (j < n)
+				if (i < n)
 				{
 					_putchar(',');
 					_putchar(' ');
