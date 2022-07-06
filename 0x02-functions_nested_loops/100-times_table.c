@@ -1,39 +1,49 @@
-#include <stdio.h>
 #include "main.h"
+/**
+ * print_times_table - prints the n times table, starting with 0
+ * @n: number of the times table
+ */
 
-/*
-* print_times table- Check main
-* @n: input integer
-* Description: Function that prints natural numbers
-* from n to 98
-* Return: nothing
-*/void print_times_table(int n)
-{	
-	int i;
-	int j;
-	int k;
+void print_times_table(int n)
+{
+		int i, j, k;
 
-	if (n < 0 || n > 15)
-	{
-		printf(" ");
-	}
-	else
-	{
-		for (i = 0; i <= n; i++)
+		if (n >= 0 && n <= 15)
 		{
-			for (j = 0; j <= n; j++)
+			for (i = 0; i <= n; i++)
 			{
-				k = j * i;
-				_putchar(k + '0');
-				if (i < n)
+				for (j = 0; j <= n; j++)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					k = j * i;
+					if (j == 0)
+					_putchar(k + '0');
+
+					else if (k < 10 && j != 0)
+					{	_putchar(44);
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+						_putchar(k + '0');
+					}
+					else if (k >= 10 && k < 100)
+					{
+						_putchar(44);
+						_putchar(32);
+						_putchar(32);
+						_putchar((k / 10) + '0');
+						_putchar((k % 10) + '0');
+					}
+					else if (k >= 100)
+					{
+						_putchar(44);
+						_putchar(32);
+						_putchar((k / 100) + '0');
+						_putchar(((k / 10) % 10) + '0');
+						_putchar((k % 10) + '0');
+					}
 				}
-		_putchar('\n');
+				_putchar('\n');
 			}
-		printf("\n");
 		}
-	}
 }
+
