@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
- * print_times table- Check main
- * @n: input integer
- * Description: Function that prints natural numbers
- * from n to 98
- * Return: nothing
- */
-
-void print_times_table(int n)
+/*
+* print_times table- Check main
+* @n: input integer
+* Description: Function that prints natural numbers
+* from n to 98
+* Return: nothing
+*/void print_times_table(int n)
 {	int i;
 	int j;
 	int k;
@@ -37,4 +35,3 @@ void print_times_table(int n)
 		printf("\n");
 	}
 }
-
