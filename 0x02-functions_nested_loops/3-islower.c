@@ -7,7 +7,7 @@
  * Return: 0 otherwise
  */
 
-int _islower(int c)
+int _islower(char c)
 {
 	char i;
 	int is_lower = 0;
