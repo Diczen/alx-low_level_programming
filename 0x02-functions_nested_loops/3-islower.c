@@ -3,7 +3,8 @@
 /**
  * _islower - It checks for lowercase character
  * @c: An input character
- * Return: 1 if c is lowercase or 0 otherwise
+ * Return: 1 if c is lowercase
+ * Return: 0 otherwise
  */
 
 int _islower(int c)
@@ -14,7 +15,7 @@ int _islower(int c)
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (i == c)
-			is_lower = 1;
+			lower = 1;
 	}
 	return (is_lower);
 }
