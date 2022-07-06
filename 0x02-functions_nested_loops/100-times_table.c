@@ -8,7 +8,8 @@
 * from n to 98
 * Return: nothing
 */void print_times_table(int n)
-{	int i;
+{	
+	int i;
 	int j;
 	int k;
 
@@ -31,7 +32,8 @@
 					_putchar(' ');
 				}
 		_putchar('\n');
-		}
+			}
 		printf("\n");
+		}
 	}
 }
