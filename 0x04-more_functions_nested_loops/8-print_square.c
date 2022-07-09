@@ -3,8 +3,7 @@
 /**
  * print_square - Check the main file
  * @size: Value of square size
- * A function that prints a square  n, followed by a new line
- *
+ * Description: A function that prints a square , followed by a new line
  * Return: 0
  */
 
