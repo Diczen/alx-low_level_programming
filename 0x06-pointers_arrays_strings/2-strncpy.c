@@ -1,29 +1,23 @@
 #include "main.h"
-
 /**
- * *_strncat - Check the code
- * @dest: Destination string
- * @src: Source string
- * @n: Number of bytes to copy
- * Description: A function that combines two strings
- * Return: the pointer to resulting string
- */
+ * *_strncpy - find the length of a string
+ * @dest: pointer to the string
+ * @src: pointer
+ * @n: int
+ * Return: destination
+*/
 
-char *_strncat(char *dest, char *src, int n)
+
+char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
+	int i;
 
-	while (src[i] != '\0' && i < n)
-	{
+	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
-		i++;
-	}
 
-	while (i < n)
-	{
+	for ( ; i < n; i++)
 		dest[i] = '\0';
-		i++;
-	}
 
 	return (dest);
 }
+
